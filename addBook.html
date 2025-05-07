@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Library Management - Add Book</title>
+  <link rel="stylesheet" href="addBook.css" />
+</head>
+<body>
+
+  <h1>Library Management System</h1>
+
+  <div class="form-container">
+    <div class="top-right">
+        <a href="index.html" class="home-btn">🏠 Home</a>
+    </div>
+    <h2>Add New Book</h2>
+    <form id="addBookForm">
+      <div class="input-group">
+        <input type="text" id="bookNo" placeholder="Book No" required />
+        <span id="bookNoError" class="error-message"></span>
+      </div>
+      <div class="input-group">
+        <input type="text" id="bookName" placeholder="Book Name" required />
+        <span id="bookNameError" class="error-message"></span>
+      </div>
+      <div class="input-group">
+        <input type="text" id="author" placeholder="Author" required />
+        <span id="authorError" class="error-message"></span>
+      </div>
+      <div class="input-group">
+        <input type="number" id="price" placeholder="Price" required />
+        <span id="priceError" class="error-message"></span>
+      </div>
+      <div class="input-group">
+        <input type="text" id="genre" placeholder="Genre" />
+      </div>
+      <div class="input-group">
+        <input type="text" id="publisher" placeholder="Publisher" />
+      </div>
+      <div class="input-group">
+        <input type="number" id="year" placeholder="Year" />
+      </div>
+      <button type="submit">Add Book</button>
+    </form>
+  </div>
+
+  <script src="addbook.js"></script>
+</body>
+</html>
