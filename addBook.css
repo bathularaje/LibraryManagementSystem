@@ -1,0 +1,93 @@
+/* General Styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    text-align: center;
+    margin-top: 20px;
+    color: #333;
+}
+
+h2 {
+    text-align: center;
+    color: #333;
+}
+
+.form-container {
+    width: 90%; /* Adjusted for better responsiveness */
+    max-width: 600px;
+    margin: 20px auto; /* Added margin for vertical spacing */
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.top-right {
+    text-align: right;
+    margin-bottom: 10px;
+}
+
+.home-btn {
+    text-decoration: none;
+    font-size: 18px;
+    color: #007BFF;
+}
+
+.home-btn:hover {
+    color: #0056b3;
+}
+
+/* Form styling */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px; /* Increased gap for better spacing between input fields */
+}
+
+input {
+    padding: 12px; /* Increased padding for better usability */
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 100%;
+    box-sizing: border-box; /* Ensures consistent sizing */
+}
+
+input:focus {
+    border-color: #007BFF;
+    outline: none;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5); /* Added subtle glow effect */
+}
+
+button {
+    padding: 12px; /* Increased padding for consistency with input fields */
+    font-size: 16px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Added smooth hover effect */
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+/* Optional: Add responsive design for smaller screens */
+@media (max-width: 600px) {
+    .form-container {
+        width: 95%;
+        padding: 15px;
+    }
+
+    input, button {
+        font-size: 14px;
+        padding: 10px;
+    }
+}
