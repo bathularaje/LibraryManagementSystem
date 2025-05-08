@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Edit Book - Library Management</title>
+  <link rel="stylesheet" href="editBook.css" />
+</head>
+<body>
+
+  <h1>Library Management System</h1>
+  <div class="top-right">
+    <a href="index.html" class="home-btn">🏠 Home</a>
+  </div>
+
+  <div class="form-container">
+    <h2>Edit Book</h2>
+    <input type="text" id="searchBookNo" placeholder="Enter Book No" required />
+    <button onclick="searchBook()">Search</button>
+
+    <div id="editForm" style="display: none;">
+      <h3>Update Book Details</h3>
+      <form id="updateBookForm">
+        <input type="text" id="bookNo" placeholder="Book No" readonly />
+        <input type="text" id="bookName" placeholder="Book Name" required />
+        <input type="text" id="author" placeholder="Author" required />
+        <input type="number" id="price" placeholder="Price" required />
+        <input type="text" id="genre" placeholder="Genre" />
+        <input type="text" id="publisher" placeholder="Publisher" />
+        <input type="number" id="year" placeholder="Year" />
+        <button type="submit">Update Book</button>
+      </form>
+    </div>
+  </div>
+
+  <script src="editBook.js"></script>
+</body>
+</html>
